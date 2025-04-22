@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #1295db;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 11.8%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .left span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: white;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .right span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: white;
+    opacity: 60%;
+  }
+  
+  nav {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 0px 11.8%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 41px;
+    letter-spacing: 0.28px;
+    vertical-align: middle;
+    color: #1190D4;
+    transition: all 0.2s linear;
+  }
+  
+  a:hover {
+    color: #1190D4;
+    opacity: 80%;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    flex-wrap: wrap;
+  }
+  
+  #searchButton {
+    width: 35px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 4.25px 8.2px 7.36px 8.2px;
+    color: white;
+    background-color: #FFA901;
+    border: none;
+  }
+  
+  .nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* ------- Tuyến đường ------- */
+  
+  .route-section {
+    padding: 40px 11.8%;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .route-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .orange-line {
+    width: 5px;
+    height: 40px; 
+    background-color: orange; 
+    margin-right: 10px; 
+  }
+  
+  .routes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+  
+  .route-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .route-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .route-card img {
+    width: 260px;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    object-fit: cover;
+  }
+  
+  .route-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px; /* Khoảng cách giữa các cột và dòng */
+    padding: 20px;
+  }
+  
+ 
+  .route-info {
+    padding: 16px;
+  }
+  
+  .route-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .route-info p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  /* ------- Pagination ------- */
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background: #1295db;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+  
+  .pagination button:hover {
+    background: #0c7bbd;
+  }
+  
+  .pagination button.active {
+    background: #e8e3d8;
+    color: #fff;
+  }
+  footer {
+    background-color: #FFF7F5;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    padding: 40px 60px;
+    border-top: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 400; 
+    letter-spacing: 0%;
+    vertical-align: middle;
+  } 
+  /* ===== Footer Top ===== */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    column-gap: 60px;
+  }
+  
+  .footer-top .footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-column h4 {
+    font-size: 15px;
+    font-weight: 600; /* Chỉ hơi đậm cho tiêu đề */
+    margin-bottom: 12px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-column a:hover {
+    color: #d94d00;
+  }
+  
+  /* ===== Footer Middle ===== */
+  .footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  
+  .footer-list {
+    flex: 1;
+    min-width: 160px;
+  }
+  
+  .footer-list h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-list a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-list a:hover {
+    color: #d94d00;
+  }
+  
+  /* ===== Footer Bottom ===== */
+  .footer-bottom {
+    padding-top: 30px;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  
+  .footer-info > div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-info a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .footer-info strong{
+font-weight: 700;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+
+  }
+  
+  .footer-info a:hover {
+    color: #d94d00;
+  }
+  
+  .footer-info small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .footer-info img {
+    display: block;
+    max-width: 100px;
+    margin-bottom: 8px;
+  }
+
+
+/* Responsive cho Tablet */
+@media (max-width: 1024px) {
+    .route-grid {
+      grid-template-columns: repeat(2, 1fr); /* Chuyển sang 2 cột */
+      gap: 15px; /* Giảm khoảng cách giữa các thẻ */
+    }
+  
+    .route-card img {
+      height: 120px; /* Điều chỉnh kích thước hình ảnh */
+    }
+  
+    .route-info h3 {
+      font-size: 16px; /* Giảm kích thước tiêu đề */
+    }
+  
+    .route-info p {
+      font-size: 14px; /* Giảm kích thước mô tả */
+    }
+  }
+  
+  /* Responsive cho màn hình nhỏ hơn (Điện thoại) */
+  @media (max-width: 768px) {
+    .route-grid {
+      grid-template-columns: 1fr; /* Chỉ hiển thị 1 cột */
+    }
+  
+    .route-card img {
+      height: 100px; /* Hình ảnh nhỏ hơn */
+    }
+  
+    .route-info h3 {
+      font-size: 14px;
+    }
+  
+    .route-info p {
+      font-size: 12px;
+    }
+  }

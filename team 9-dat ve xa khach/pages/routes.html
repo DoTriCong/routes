@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuyến đường</title>
+    <link rel="stylesheet" href="../css/routes.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="../assets/icons/bus.png" width="16px" height="16px" />
+        <span>&ensp;Hệ thống Đặt Vé Xe Toàn Quốc</span>
+      </div>
+      <div class="right">
+        <img src="../assets/icons/email.png" width="15px" height="12px" />
+        <span>&ensp;info.vivutoday@gmail.com</span>
+        <span>&ensp;|&ensp;</span>
+        <img src="../assets/icons/phone.png" width="15px" height="15px" />
+        <span>&ensp;1900 0152</span>
+      </div>
+    </header>
+    <nav>
+      <img src="../assets/icons/logo.png" width="100px" height="60px" />
+      <ul class="list">
+        <li><a href="./interface.html">TRANG CHỦ</a></li>
+        <li><a href="./interface.html">GIỚI THIỆU</a></li>
+        <li><a href="./interface.html">THÔNG TIN NHÀ XE</a></li>
+        <li><a href="./interface.html">BẾN XE</a></li>
+        <li><a href="./interface.html">TUYẾN ĐƯỜNG</a></li>
+        <li><a href="./interface.html">KIỂM TRA VÉ</a></li>
+        <li>
+          <button id="searchButton">
+            <img src="../assets/icons/search.png" width="16px" height="18px" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Tiêu đề -->
+    <section class="route-section">
+      <h2 class="route-title"><span class="orange-line"></span> TUYẾN ĐƯỜNG</h2>
+      <div class="route-grid">
+        <!-- Card 1 -->
+        <div class="route-card">
+          <img src="../assets/images/img1.png" alt="Xe Bắc Giang" />
+          <div class="route-info">
+            <h3>Đặt vé xe tuyến Bến xe Ngã Tư Ga đi Bắc Giang</h3>
+            <p>
+              Bạn đang tìm kiếm một chuyến xe chất lượng cao từ Ngã Tư Ga...
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="route-card">
+          <img src="../assets/images/img2.png" alt="Xe Kiên Giang" />
+          <div class="route-info">
+            <h3>Đặt vé tuyến Sài Gòn đi Rạch Giá – Kiên Giang</h3>
+            <p>Bạn đang tìm phương tiện đi thuận tiện và nhanh chóng giữa...</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="route-card">
+          <img src="../assets/images/img3.png" alt="Xe Cam Ranh" />
+          <div class="route-info">
+            <h3>Tuyến Sài Gòn đi Cam Ranh – Khánh Hòa</h3>
+            <p>
+              Top 10 nhà xe tuyến Sài Gòn đi Cam Ranh Khánh Hòa được đánh giá...
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="route-card">
+          <img src="../assets/images/img4.png" alt="Xe Bình Thuận" />
+          <div class="route-info">
+            <h3>Đặt vé xe Bình Thuận đi Cam Ranh – Khánh Hòa</h3>
+            <p>
+              Bạn đang tìm kiếm chuyến xe chất lượng trên tuyến đường Bình
+              Thuận...
+            </p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="route-card">
+          <img src="../assets/images/img5.png" alt="Xe Gia Lai" />
+          <div class="route-info">
+            <h3>Top 8 nhà xe từ Bến xe Gia Lai đi Sài Gòn</h3>
+            <p>
+              Bạn đang tìm kiếm một chuyến xe chất lượng cao từ Bến xe Ngã Tư...
+            </p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="route-card">
+          <img src="../assets/images/img6.png" alt="Xe Buôn Ma Thuột" />
+          <div class="route-info">
+            <h3>Vé xe từ bến xe phía nam Buôn Ma Thuột đi Sài Gòn</h3>
+            <p>
+              Bạn đang tìm kiếm phương tiện di chuyển thuận tiện và nhanh chóng
+              giữa Sài Gòn và Kiên Giang.
+            </p>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="route-card">
+          <img src="../assets/images/img7.png" alt="Xe Hà Nội" />
+          <div class="route-info">
+            <h3>Đặt vé xe tuyến Hà Nội đi Vân Đồn – Quảng Ninh</h3>
+            <p>
+              Top 10 nhà xe tuyến Hà Nội đi Vân Đồn – Quảng Ninh được đánh
+              giá...
+            </p>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="route-card">
+          <img src="../assets/images/img8.png" alt="Xe Vũng Tàu" />
+          <div class="route-info">
+            <h3>Đặt vé xe từ Vũng Tàu đi Sân bay Tân Sơn Nhất</h3>
+            <p>
+              Bạn đang tìm kiếm chuyến xe chất lượng trên tuyến đường Vũng
+              Tàu...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button>&lt;</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>...</button>
+        <button>149</button>
+        <button>&gt;</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>Tin tức</h4>
+          <a href="#">Xe Limousine – Đẳng cấp hạng thương gia thời đại mới</a>
+          <a href="#"
+            >Tổng quan các bến xe Vũng Tàu – Giới thiệu thông tin lịch trình nhà
+            xe</a
+          >
+          <a href="#">Top 31 nhà xe limousine, xe giường nằm đi Đà Lạt</a>
+        </div>
+        <div class="footer-column">
+          <h4>Tuyến đường</h4>
+          <a href="#">Xe đi Buôn Mê Thuột từ Sài Gòn</a>
+          <a href="#">Xe đi Vũng Tàu từ Sài Gòn</a>
+          <a href="#">Xe đi Nha Trang từ Sài Gòn</a>
+          <a href="#">Xe đi Đà Lạt từ Sài Gòn</a>
+          <a href="#">Xe đi Sapa từ Hà Nội</a>
+          <a href="#">Xe đi Hải Phòng từ Hà Nội</a>
+          <a href="#">Xe đi Vinh từ Hà Nội</a>
+        </div>
+        <div class="footer-column">
+          <h4>Xe Limousine</h4>
+          <a href="#">Xe Limousine đi Đà Lạt từ Sài Gòn</a>
+          <a href="#">Xe Limousine đi Vũng Tàu từ Sài Gòn</a>
+          <a href="#">Xe Limousine đi Nha Trang từ Sài Gòn</a>
+          <a href="#">Xe Limousine đi Hải Phòng từ Hà Nội</a>
+          <a href="#">Xe Limousine đi Hạ Long từ Hà Nội</a>
+          <a href="#">Xe Limousine đi Sapa từ Hà Nội</a>
+          <a href="#">Xe Limousine đi Quảng Ninh từ Hà Nội</a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-list">
+          <h4>Bến xe</h4>
+          <a href="#">Bến xe Miền Đông</a>
+          <a href="#">Bến xe Trung tâm Đà Nẵng</a>
+          <a href="#">Bến xe Gia Lâm</a>
+          <a href="#">Bến xe Mỹ Đình</a>
+          <a href="#">Bến xe An Sương</a>
+          <a href="#">Bến xe Nước Ngầm</a>
+          <a href="#">Bến xe Miền Tây</a>
+        </div>
+        <div class="footer-list">
+          <h4>Nhà xe</h4>
+          <a href="#">Xe Sao Việt</a>
+          <a href="#">Xe Hoa Mai</a>
+          <a href="#">Xe Hạ Long Travel</a>
+          <a href="#">Xe Quốc Đạt</a>
+          <a href="#">Xe Thanh Bình Xanh</a>
+          <a href="#">Xe Thiện Thành Limousine</a>
+          <a href="#">Xe Hồng Sơn Phú Yên</a>
+          <a href="#">Xe Tiến Oanh</a>
+        </div>
+        <div class="footer-list">
+          <h4></h4>
+          <a href="#">Xe Hải Âu</a>
+          <a href="#">Xe Chín Nghĩa</a>
+          <a href="#">Xe Hưng Long</a>
+          <a href="#">Xe Kim Mạnh Hùng</a>
+          <a href="#">Xe Tuấn Hưng</a>
+          <a href="#">Xe Khanh Phong</a>
+          <a href="#">Xe An Anh (Quê Hương)</a>
+          <a href="#">Xe Minh Quốc</a>
+        </div>
+        <div class="footer-list">
+          <h4></h4>
+          <a href="#">Xe Văn Minh</a>
+          <a href="#">Xe Anh Tuyến</a>
+          <a href="#">Xe Điền Linh</a>
+          <a href="#">Xe Hạnh Cafe</a>
+          <a href="#">Xe Tuấn Nga</a>
+          <a href="#">Xe Ngọc Ánh Sài Gòn</a>
+          <a href="#">Xe Hùng Cường</a>
+          <a href="#">Xe Thuận Tiến</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <div>
+            <h4>Về Chúng Tôi</h4>
+            <a href="#">Giới Thiệu Vevutoday</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Giá trị cốt lõi</a>
+          </div>
+          <div>
+            <h4>Hỗ Trợ</h4>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Chính sách điều khoản và giao dịch chung</a>
+            <a href="#">Chính sách đổi trả và hoàn tiền</a>
+            <a href="#">Chính sách thanh toán</a>
+            <a href="#">Quy chế hoạt động</a>
+          </div>
+          <div>
+            <h4>Liên hệ</h4>
+            <a href="#"
+              ><strong>Hotline: 1900 0152 </strong><br /><small
+                >(Cước phí: 3.000 đồng/phút)</small
+              ></a
+            >
+            <a href="#"
+              ><strong>Hotline: 1900.996.678</strong><br /><small
+                >(Cước phí: 1.000 đồng/phút)</small
+              ></a
+            >
+            <a href="#"
+              ><strong>Hotline: 1900.0179</strong><br /><small
+                >Cước phí: 8000đ/phút (dịch vụ đặt vé nhanh 24/7)</small
+              ></a
+            >
+          </div>
+          <div>
+            <h4>Chứng nhận</h4>
+            <img src="../assets/icons/dmca.png" alt="DMCA" />
+            <img src="../assets/icons/ncsc.png" alt="NCSC" />
+            <img src="../assets/icons/bct.png" alt="Bộ Công Thương" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
