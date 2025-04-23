@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Quản lý Vé Xe</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>BusAdmin</h2>
+      <ul>
+        <li><a style="color: blue" href="#">Tổng quan</a></li>
+        <li><a href="#">Hành khách</a></li>
+        <li><a href="#">Chuyến xe</a></li>
+        <li><a href="#">Đơn đặt vé</a></li>
+        <li><a href="#">Lịch trình xe</a></li>
+        <li><a href="#">Doanh thu</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="dashboard-header">
+        <h1>Dashboard Overview</h1>
+        <p>Chào mừng bạn quay lại, Admin!</p>
+        <div class="dashboard-actions">
+          <img src="../assets/icons/Frame.png" alt="" />
+          <img
+            class="avatar"
+            src="../assets/images/img.png"
+            alt="Avatar"
+            class="avatar"
+          />
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Tổng số hành khách</h3>
+          <p>2,547</p>
+        </div>
+        <div class="card">
+          <h3>Chuyến xe đang hoạt động</h3>
+          <p>186</p>
+        </div>
+        <div class="card">
+          <h3>Tỉ lệ đặt vé thành công</h3>
+          <p>87.5%</p>
+        </div>
+        <div class="card">
+          <h3>Doanh thu hôm nay</h3>
+          <p>$847,245</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Hoạt động gần đây</h2>
+        <ul>
+          <li>Nguyễn Văn A đã đặt vé Hà Nội - Sài Gòn (2 giờ trước)</li>
+          <li>Lê Thị B đã hủy chuyến Hà Nội - Đà Nẵng (4 giờ trước)</li>
+          <li>Trịnh C cập nhật thông tin liên hệ (6 giờ trước)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Chuyến xe hôm nay</h2>
+        <ul>
+          <li>08:00 - Hà Nội - Hải Phòng (Mã chuyến: BX-001)</li>
+          <li>10:30 - Hà Nội - Đà Nẵng (Mã chuyến: BX-003)</li>
+          <li>15:00 - Hà Nội - TP.HCM (Mã chuyến: BX-007)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Hành khách gần đây</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Họ tên</th>
+              <th>Tuyến đã đặt</th>
+              <th>Trạng thái</th>
+              <th>Chi tiết</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#KH001</td>
+              <td>Nguyễn Văn A</td>
+              <td>Hà Nội - Sài Gòn</td>
+              <td><span class="status paid">Đã thanh toán</span></td>
+              <td><a href="#">Xem</a></td>
+            </tr>
+            <tr>
+              <td>#KH002</td>
+              <td>Trần Thị B</td>
+              <td>Hà Nội - Đà Nẵng</td>
+              <td><span class="status pending">Đang xử lý</span></td>
+              <td><a href="#">Xem</a></td>
+            </tr>
+            <tr>
+              <td>#KH003</td>
+              <td>Lê Văn C</td>
+              <td>Hải Phòng - Hà Nội</td>
+              <td><span class="status cancelled">Đã hủy</span></td>
+              <td><a href="#">Xem</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

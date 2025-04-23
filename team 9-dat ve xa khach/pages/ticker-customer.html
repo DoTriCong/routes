@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý khách hàng</title>
+    <link rel="stylesheet" href="../css/ticker-customer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>BusAdmin</h2>
+      <ul>
+        <li><a href="#">Tổng quan</a></li>
+        <li><a style="color: blue" href="#">Hành khách</a></li>
+        <li><a href="#">Chuyến xe</a></li>
+        <li><a href="#">Đơn đặt vé</a></li>
+        <li><a href="#">Lịch trình xe</a></li>
+        <li><a href="#">Doanh thu</a></li>
+      </ul>
+    </div>
+    <div class="customer-dashboard">
+      <div class="customer-info">
+        <img src="../assets/images/img.png" alt="Avatar" class="avatar" />
+        <div>
+          <h2>Nguyễn Văn A</h2>
+          <p>Mã KH: KH20250401</p>
+          <span class="status active">Thân thiết</span>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="card">
+          <h4>Lượt đặt</h4>
+          <p>32</p>
+        </div>
+        <div class="card">
+          <h4>Lượt hủy</h4>
+          <p>2</p>
+        </div>
+        <div class="card">
+          <h4>Hài lòng</h4>
+          <p>4.8/5 ⭐</p>
+        </div>
+        <div class="card">
+          <h4>Hạng</h4>
+          <p>#12</p>
+        </div>
+      </div>
+
+      <div class="recent-trips">
+        <h3>Chuyến đã đặt gần đây</h3>
+        <ul>
+          <li>
+            Hà Nội → Sài Gòn - 02/04/2025 -
+            <span class="badge success">Đã đi</span>
+          </li>
+          <li>
+            Hà Nội → Hải Phòng - 28/03/2025 -
+            <span class="badge cancel">Hủy</span>
+          </li>
+          <li>
+            Đà Nẵng → Huế - 26/03/2025 -
+            <span class="badge pending">Chờ thanh toán</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="booking-overview">
+        <h3>Thống kê đặt vé</h3>
+        <div class="progress-group">
+          <label>Đã đặt</label>
+          <div class="progress green" style="width: 70%"></div>
+        </div>
+        <div class="progress-group">
+          <label>Hủy</label>
+          <div class="progress red" style="width: 10%"></div>
+        </div>
+        <div class="progress-group">
+          <label>Chờ thanh toán</label>
+          <div class="progress orange" style="width: 20%"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

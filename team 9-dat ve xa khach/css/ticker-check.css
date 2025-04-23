@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: #1295db;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 11.8%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .left span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: white;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .right span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: white;
+    opacity: 60%;
+  }
+  
+  nav {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding: 0px 11.8%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 41px;
+    letter-spacing: 0.28px;
+    vertical-align: middle;
+    color: #1190D4;
+    transition: all 0.2s linear;
+  }
+  
+  a:hover {
+    color: #1190D4;
+    opacity: 80%;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    flex-wrap: wrap;
+  }
+  
+  #searchButton {
+    width: 35px;
+    height: 30px;
+    border: none;
+  }
+  
+  .nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .ticket-check {
+    background-color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .ticket-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .ticket-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 360px;
+  }
+  
+  .ticket-form h2 {
+    color: #0070c0;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-form input {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  
+  .ticket-form button {
+    width: 100%;
+    background-color: #0070c0;
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ticket-form button:hover {
+    background-color: #005fa3;
+  }
+
+  .ticket-note {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 16px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: normal;
+  }
+  
+.note{
+    display: block;
+}
+
+  .ticket-note strong {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+  
+  .note-banner {
+    background-color: #e1f3e9; /* xanh nhạt như mẫu */
+    color: #3c763d;            /* xanh lá đậm */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  
+  .ticket-banner {
+    flex: 1;
+    min-width: 300px;
+    max-width: 740px;
+    
+  }
+  
+  .ticket-banner img {
+    width: 727px;
+    height: 242px;
+    top: 202px;
+    left: 543px;
+  }
+  
+  /*footer*/
+  footer {
+    background-color: #FFF7F5;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    padding: 40px 60px;
+    border-top: 1px solid #ddd;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 400; 
+    letter-spacing: 0%;
+    vertical-align: middle;
+  } 
+  /* ===== Footer Top ===== */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    column-gap: 60px;
+  }
+  
+  .footer-top .footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-column h4 {
+    font-size: 15px;
+    font-weight: 600; /* Chỉ hơi đậm cho tiêu đề */
+    margin-bottom: 12px;
+  }
+  
+  .footer-column a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-column a:hover {
+    color: #d94d00;
+  }
+  
+  /* ===== Footer Middle ===== */
+  .footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  
+  .footer-list {
+    flex: 1;
+    min-width: 160px;
+  }
+  
+  .footer-list h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-list a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-list a:hover {
+    color: #d94d00;
+  }
+  
+  /* ===== Footer Bottom ===== */
+  .footer-bottom {
+    padding-top: 30px;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  
+  .footer-info > div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-info a {
+    display: block;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .footer-info strong{
+font-weight: 700;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: #000000;
+
+  }
+  
+  .footer-info a:hover {
+    color: #d94d00;
+  }
+  
+  .footer-info small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .footer-info img {
+    display: block;
+    max-width: 100px;
+    margin-bottom: 8px;
+  }

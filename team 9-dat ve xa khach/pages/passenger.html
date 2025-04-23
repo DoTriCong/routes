@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/passenger.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>BusAdmin</h2>
+      <ul>
+        <li><a href="#">Tổng quan</a></li>
+        <li><a style="color: blue" href="#">Hành khách</a></li>
+        <li><a href="#">Chuyến xe</a></li>
+        <li><a href="#">Đơn đặt vé</a></li>
+        <li><a href="#">Lịch trình xe</a></li>
+        <li><a href="#">Doanh thu</a></li>
+      </ul>
+    </div>
+
+    <div class="booking-header">
+      <h2>Passenger</h2>
+      <p>Quản lý thông tin đặt vé xe</p>
+    </div>
+
+    <div class="booking-controls">
+      <input type="text" placeholder="Tìm khách hàng..." />
+      <select>
+        <option>Tất cả chuyến</option>
+        <option>TP HCM - Đà Lạt</option>
+        <option>Hà Nội - Hải Phòng</option>
+      </select>
+      <select>
+        <option>Tất cả trạng thái</option>
+        <option>Đã thanh toán</option>
+        <option>Chưa thanh toán</option>
+      </select>
+      <button class="btn-add">+ Thêm đặt vé</button>
+    </div>
+
+    <table class="booking-table">
+      <thead>
+        <tr class="header-row">
+          <th>STT</th>
+          <th>Khách hàng</th>
+          <th>Mã vé</th>
+          <th>Chuyến</th>
+          <th>Ngày đi</th>
+          <th>Trạng thái</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="customer-info">
+              <img src="../assets/images/img.png" alt="avatar" />
+              <div>
+                <strong>Nguyễn Văn A</strong><br />
+                <small>0901234567</small>
+              </div>
+            </div>
+          </td>
+          <td>#VE12345</td>
+          <td>TP HCM - Đà Lạt</td>
+          <td>25/04/2025</td>
+          <td><span class="badge paid">Đã thanh toán</span></td>
+          <td>
+            <button class="action-btn edit">✏️</button>
+            <button class="action-btn delete">🗑️</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <div class="customer-info">
+              <img src="https://i.pravatar.cc/40?img=7" alt="avatar" />
+              <div>
+                <strong>Trần Thị B</strong><br />
+                <small>0987654321</small>
+              </div>
+            </div>
+          </td>
+          <td>#VE12346</td>
+          <td>Hà Nội - Hải Phòng</td>
+          <td>26/04/2025</td>
+          <td><span class="badge unpaid">Chưa thanh toán</span></td>
+          <td>
+            <button class="action-btn edit">✏️</button>
+            <button class="action-btn delete">🗑️</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <button class="page-btn disabled">Previous</button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">Next</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/passenger.js"></script>
+  </body>
+</html>
